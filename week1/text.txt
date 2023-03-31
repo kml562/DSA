@@ -1,0 +1,106 @@
+AMY AND ARRAY
+Problem Statement
+
+
+
+Amy has an array A, of N integers. In one operation she can select any element of the array and decrease it by 1 such that the resultant number is non-negative.
+
+She wants to make her array such that for each index K (1<=K<=N), following must hold for all the indices X (1<=X<K) less than it:
+
+· Either AX = 0 or,
+
+· AX < AK
+
+
+
+Find the minimum number of operations required to make her array as she wants.
+
+
+
+You are given T independent test cases.
+
+
+
+
+
+Constraints
+
+1 <= T <= 5
+1 <= N <= 105
+1 <= AK <= 109
+All input values are integers.
+
+
+
+
+Input Format
+
+First-line contains T.
+First line of each test case consists of a single integer N.
+Second line of each test case consists of N space separated integers denoting the array A.
+
+
+
+
+Output Format
+
+Print in in a newline for each test case single integer denoting the minimum number of operations required to make her array as she wants.
+
+
+
+
+Sample Input 1
+
+2
+
+5
+
+1 1 9 17 19
+
+2
+
+1 2
+
+
+
+
+
+Sample Output 1
+
+1
+
+0
+
+
+
+
+
+Explanation of Sample 1
+
+
+
+For 1st test case, she selects the first element and decrease it by 1. So array becomes [0,1,9,17, 19]
+
+
+
+
+
+
+
+Things to Note for the Candidate:
+
+
+
+ You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. -Sample Problem Statement  (Right Click and Open in New Tab to view.)
