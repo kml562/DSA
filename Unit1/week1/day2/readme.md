@@ -1,4 +1,4 @@
-Home assignment
+##Home assignment
 1. find the maximum element in an array
 2. find the minimum element in an array
 3. find the second largest element in an array
