@@ -8,7 +8,7 @@
 function bruteForce(arr) {
 
     // making a new array and filling with zeroes;
-    let newarr = new Array(arr.length).fill(0);
+    let newarr = new Arr(arr.length).fill(0);
     let i = 0;
     let j = 0;
     while (i < arr.length-1) { 
@@ -24,4 +24,28 @@ function bruteForce(arr) {
     return newarr;
 }
 
-console.log(bruteForce([0,1,0,3,3,3,31,0,0,4,4,0]))
+//console.log(bruteForce([0, 1, 0, 3, 3, 3, 31, 0, 0, 4, 4, 0]))
+
+// now we have to optimize the methods==
+
+// two pointers method
+// time complexity is O(n) and space complexity is O(1)
+
+function twoPointers(arr) {
+    let l = 0; // track non zero elements
+    let r = 0;  // shifting the elements by one by one
+    while (r < arr.length) { 
+        if (arr[r] !== 0) {
+            // shifing the elements
+            [arr[l], arr[r]] = [arr[r], arr[l]];
+            l++;
+}
+        r++;
+    }
+    return arr;
+}
+
+console.log(twoPointers([0, 1, 0, 3, 3, 3, 31, 0, 0, 4, 4, 0]))
+
+
+//
