@@ -8,7 +8,7 @@
 function bruteForce(arr) {
 
     // making a new array and filling with zeroes;
-    let newarr = new Arr(arr.length).fill(0);
+    let newarr = new Array(arr.length).fill(0);
     let i = 0;
     let j = 0;
     while (i < arr.length-1) { 
@@ -48,4 +48,20 @@ function twoPointers(arr) {
 console.log(twoPointers([0, 1, 0, 3, 3, 3, 31, 0, 0, 4, 4, 0]))
 
 
-//
+//using splice method==
+// time complexity is O(n) and space complexity is O(1)
+function splice(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n; i++) { 
+        if (arr[i] === 0) {
+            arr.splice(i, 1);
+            arr.push(0);
+            i--;
+            n--;
+}
+
+    }
+    return arr;
+}
+
+console.log(splice([1,0,5,5,0,4]))
